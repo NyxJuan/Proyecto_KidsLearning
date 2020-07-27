@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KidsLearning</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="texto_ayuda1">Aqui podrás aprender la correcta pronunciación de los números en Ingles, para eso tendrás que presionar diferentes números para poder escucharlos.</string>
+    <string name="texto_ayuda2">Listo para seguir aprendiendo? En este nivel aprenderás a relacionar los números en ingles con las figuras que te iremos mostrando.</string>
+    <string name="texto_ayuda3">En este nivel pondrás a prueba lo que aprendiste, el instructor pronunciará un número y tú deberás adivinar cuál es!</string>
+    <string name="texto_ayuda4">Aumenta un grado más tu habilidad con esta fabulosa actividad donde pondrás a prueba tu memoria.</string>
+    <string name="texto_ayuda5">En este último nivel demostrarás las lecciones aprendidas, pon a prueba tu destreza con este fabuloso juego.</string>
+</resources>
