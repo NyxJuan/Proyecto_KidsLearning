@@ -41,10 +41,20 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
         Toast.makeText(getApplicationContext(), "Iniciar Menu3 desde el activity", Toast.LENGTH_SHORT).show();
     }
 
+
+
     @Override
     public void iniciarMenu4() {
-        Toast.makeText(getApplicationContext(), "Iniciar Menu4 desde el activity", Toast.LENGTH_SHORT).show();
+
+        Intent i = new Intent(this,JuegoMemorias.class);
+        startActivity(i);
+
+
+
     }
+
+
+
 
     @Override
     public void iniciarMenu5() {
