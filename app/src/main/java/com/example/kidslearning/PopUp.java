@@ -12,12 +12,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PopUp extends AppCompatActivity {
     private ImageView PopUp;
-    private JuegoIngles juegoIngles;
+    Class fromClass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pop_up);
+
+
+        String from = getIntent().getStringExtra("from");
+        try {
+            fromClass = Class.forName(from);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
 
         PopUp = findViewById(R.id.PopUp_id);
         PopUp.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +43,7 @@ public class PopUp extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
-                        Intent intent = new Intent(PopUp.this,JuegoIngles.class);
+                        Intent intent = new Intent(PopUp.this,fromClass);
                         startActivity(intent);
                         finish();
                     }

@@ -19,11 +19,17 @@ public class JuegoIngles extends AppCompatActivity implements View.OnClickListen
     private MediaPlayer mp1, mp2, mp3, mp4,mp5,mp6,mp7,mp8,mp9,mp10,mpNo,mpWin;
     private int state;
 
+    //para guardar la actividad
+    String currentActivity;
+
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.juegoingles);
+
+        //para guardar la actividad
+        currentActivity = this.getClass().getName();
 
         //Enlazar los botones
         btn1 = findViewById(R.id.btn1);
@@ -108,22 +114,28 @@ public class JuegoIngles extends AppCompatActivity implements View.OnClickListen
                 if (state == 1){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 4){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 7){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 10){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else {
                     mpNo = MediaPlayer.create(this,R.raw.no);
@@ -139,17 +151,23 @@ public class JuegoIngles extends AppCompatActivity implements View.OnClickListen
                 if (state == 2){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 5){
                     mpWin = MediaPlayer.create(this,R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 8) {
                     mpWin = MediaPlayer.create(this, R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else {
                     mp4 = MediaPlayer.create(this,R.raw.no);
@@ -165,17 +183,23 @@ public class JuegoIngles extends AppCompatActivity implements View.OnClickListen
                 if (state == 3) {
                     mpWin = MediaPlayer.create(this, R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 6) {
                     mpWin = MediaPlayer.create(this, R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else if (state == 9) {
                     mpWin = MediaPlayer.create(this, R.raw.winner);
                     mpWin.start();
-                    startActivity(new Intent(JuegoIngles.this, PopUp.class));
+
+                    startActivity(new Intent(JuegoIngles.this, PopUp.class).putExtra("from" , currentActivity));
+                    //startActivity(new Intent(JuegoIngles.this, PopUp.class));
                 }
                 else {
                     mp4 = MediaPlayer.create(this, R.raw.no);

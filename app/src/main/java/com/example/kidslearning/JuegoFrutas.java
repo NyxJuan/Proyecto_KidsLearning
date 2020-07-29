@@ -1,6 +1,7 @@
 package com.example.kidslearning;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -39,6 +40,9 @@ public class JuegoFrutas  extends AppCompatActivity {
     boolean bloqueo = false;
     final Handler handler = new Handler();
 
+    String currentActivity;
+    private MediaPlayer mpWin;
+
 
 
     @Override
@@ -46,6 +50,8 @@ public class JuegoFrutas  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.juegofrutas);
         init();
+
+        currentActivity = this.getClass().getName();
 
         siguiente = findViewById(R.id.boton_siguiente);
 
@@ -163,8 +169,11 @@ public class JuegoFrutas  extends AppCompatActivity {
 
                 //   textoPuntuacion.setText("INTENTOS: " + puntuacion);
                 if(aciertos == imagenes.length){
-                    Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
-                    toast.show();
+                    mpWin = MediaPlayer.create(this,R.raw.winner);
+                    mpWin.start();
+                    startActivity(new Intent(JuegoFrutas.this, PopUp.class).putExtra("from" , currentActivity));
+                    //Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
+                   //toast.show();
                 }
             } else {
                 handler.postDelayed(new Runnable() {
