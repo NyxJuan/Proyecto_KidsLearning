@@ -5,11 +5,11 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.kidslearning.fragments.Ayuda1Fragment;
-import com.example.kidslearning.fragments.Ayuda2Fragment;
-import com.example.kidslearning.fragments.Ayuda3Fragment;
-import com.example.kidslearning.fragments.Ayuda4Fragment;
-import com.example.kidslearning.fragments.Ayuda5Fragment;
+import com.example.kidslearning.juegos.Ayuda1Fragment;
+import com.example.kidslearning.juegos.Ayuda2Fragment;
+import com.example.kidslearning.juegos.Ayuda3Fragment;
+import com.example.kidslearning.juegos.Ayuda4Fragment;
+import com.example.kidslearning.juegos.Ayuda5Fragment;
 
 public class FragmentAdapter extends FragmentPagerAdapter{
 

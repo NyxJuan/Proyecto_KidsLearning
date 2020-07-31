@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Inicio" />
+
+        <item android:id="@+id/lecciones"
+            android:icon="@drawable/settings"
+            android:title="Lecciones" />
+
+        <item android:id="@+id/juegos"
+            android:icon="@drawable/play"
+            android:title="Juegos" />
+
+        <item android:id="@+id/salir"
+            android:icon="@drawable/exit"
+            android:title="Salir" />
+    </group>
+</menu>

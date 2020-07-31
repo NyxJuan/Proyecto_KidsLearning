@@ -1,4 +1,4 @@
-package com.example.kidslearning.fragments;
+package com.example.kidslearning.juegos;
 
 import android.os.Bundle;
 
