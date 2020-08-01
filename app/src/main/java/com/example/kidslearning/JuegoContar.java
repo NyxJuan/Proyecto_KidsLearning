@@ -74,6 +74,8 @@ public class JuegoContar extends AppCompatActivity implements View.OnClickListen
             }
         }
 
+
+
         if (view.getId() == R.id.imageButton3 ){
             Animation animation = AnimationUtils.loadAnimation(this,R.anim.blink);
             btn3.startAnimation(animation);
@@ -89,6 +91,8 @@ public class JuegoContar extends AppCompatActivity implements View.OnClickListen
                 sound4.start();
             }
         }
+
+
 
         if (view.getId() == R.id.imageButton5 ){
             Animation animation = AnimationUtils.loadAnimation(this,R.anim.blink);
