@@ -1,5 +1,6 @@
 package com.example.kidslearning;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -33,11 +34,15 @@ public class JuegoFiguras extends AppCompatActivity {
     boolean bloqueo = false;
     final Handler handler = new Handler();
 
+    String currentActivity;
+    //currentActivity = this.getClass().getName();
+
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.juegofiguras);
         init();
+        currentActivity = this.getClass().getName();
     }
 
     private void cargarTablero(){
@@ -142,6 +147,7 @@ public class JuegoFiguras extends AppCompatActivity {
 
                 //   textoPuntuacion.setText("INTENTOS: " + puntuacion);
                 if(aciertos == imagenes.length){
+                    startActivity(new Intent(JuegoFiguras.this, PopUp.class).putExtra("from" , currentActivity));
                     Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
                     toast.show();
                 }

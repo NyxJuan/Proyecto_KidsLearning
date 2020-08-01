@@ -35,6 +35,7 @@ public class JuegoNumeros  extends AppCompatActivity {
     int numeroPrimero, numeroSegundo;
     boolean bloqueo = false;
     final Handler handler = new Handler();
+    String currentActivity;
 
     @Override
     protected void onCreate (Bundle savedIndtanceState){
@@ -42,6 +43,7 @@ public class JuegoNumeros  extends AppCompatActivity {
         super.onCreate(savedIndtanceState);
         setContentView(R.layout.juegonumero);
         init();
+        currentActivity = this.getClass().getName();
 
         next = findViewById(R.id.next);
 
@@ -162,6 +164,7 @@ public class JuegoNumeros  extends AppCompatActivity {
 
                 //   textoPuntuacion.setText("INTENTOS: " + puntuacion);
                 if(aciertos == imagenes.length){
+                    startActivity(new Intent(JuegoNumeros.this, PopUp.class).putExtra("from" , currentActivity));
                     Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
                     toast.show();
                 }

@@ -21,6 +21,7 @@ public class JuegoIngles extends AppCompatActivity implements View.OnClickListen
 
     //para guardar la actividad
     String currentActivity;
+    //currentActivity = this.getClass().getName();
 
 
     @Override

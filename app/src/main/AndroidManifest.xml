@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".JuegoMemorias"></activity>
         <activity android:name=".JuegoFrutas"></activity>
         <activity android:name=".JuegoNumeros"></activity>
         <activity android:name=".JuegoContar"></activity>
         <activity android:name=".JuegoFiguras"></activity>
         <activity android:name=".JuegoIngles"></activity>
+        <activity android:name=".JuegoApples"></activity>
         <activity android:name=".PopUp"
             android:theme="@style/AppTheme.CustomTheme">
         </activity>

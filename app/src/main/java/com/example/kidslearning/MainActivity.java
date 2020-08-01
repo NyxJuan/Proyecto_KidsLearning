@@ -99,14 +99,15 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
 
     @Override
     public void iniciarMenu3() {
-        Toast.makeText(getApplicationContext(), "Iniciar Menu3 desde el activity", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, JuegoApples.class);
+        startActivity(intent);
     }
 
 
     @Override
     public void iniciarMenu4() {
 
-        Intent i = new Intent(this, JuegoMemorias.class);
+        Intent i = new Intent(this, JuegoFrutas.class);
         startActivity(i);
 
     }
