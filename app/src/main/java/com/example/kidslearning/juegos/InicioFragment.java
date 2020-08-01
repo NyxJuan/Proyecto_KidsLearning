@@ -39,8 +39,6 @@ public class InicioFragment extends Fragment {
         cardMenu2 = vista.findViewById(R.id.cardMenu2);
         cardMenu3 = vista.findViewById(R.id.cardMenu3);
         cardMenu4 = vista.findViewById(R.id.cardMenu4);
-        cardMenu5 = vista.findViewById(R.id.cardMenu5);
-        cardMenu6 = vista.findViewById(R.id.cardMenu6);
         eventosMenu();
         return vista;
     }
@@ -72,20 +70,6 @@ public class InicioFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 interfaceComunicarFragments.iniciarMenu4();
-            }
-        });
-
-        cardMenu5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                interfaceComunicarFragments.iniciarMenu5();
-            }
-        });
-
-        cardMenu6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                interfaceComunicarFragments.iniciarMenu6();
             }
         });
     }

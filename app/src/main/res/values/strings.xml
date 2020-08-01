@@ -17,8 +17,8 @@
     <string name="titulo">LAS FRUTAS</string>
     <string name="boton_init_quit">Salir</string>
     <string name="boton_juego_reinit">Reiniciar</string>
-    <string name="boton_juego_quit">Salir</string>
-    <string name="next">Siguientes</string>
+    <string name="boton_juego_quit">Atrás</string>
+    <string name="next">Siguiente</string>
     <string name="tituloN">LOS NUMEROS</string>
     <string name="tituloFG">FIGURAS GEOMETRICAS</string>
 

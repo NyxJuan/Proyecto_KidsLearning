@@ -9,29 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.ContenedorInstruccionesActivity">
-
-        </activity>
+        <activity android:name=".actividades.ContenedorAnimalesActivity"></activity>
+        <activity android:name=".actividades.ContenedorInstruccionesActivity"></activity>
         <activity android:name=".actividades.SplashActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity">
 
-        <activity android:name=".JuegoFrutas"></activity>
-        <activity android:name=".JuegoNumeros"></activity>
-        <activity android:name=".JuegoContar"></activity>
-        <activity android:name=".JuegoFiguras"></activity>
-        <activity android:name=".JuegoIngles"></activity>
-        <activity android:name=".JuegoApples"></activity>
-        <activity android:name=".PopUp"
-            android:theme="@style/AppTheme.CustomTheme">
         </activity>
+        <activity android:name=".JuegoFrutas" />
+        <activity android:name=".JuegoNumeros" />
+        <activity android:name=".JuegoContar" />
+        <activity android:name=".JuegoFiguras" />
+        <activity android:name=".JuegoIngles" />
+        <activity android:name=".JuegoApples" />
+        <activity
+            android:name=".PopUp"
+            android:theme="@style/AppTheme.CustomTheme"></activity>
     </application>
 
 </manifest>

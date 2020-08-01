@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".actividades.SplashActivity"
-    android:background="@color/colorCeleste">
+    android:background="@drawable/fondo_splash">
 
     <ImageView
-        android:layout_width="290dp"
-        android:layout_height="219dp"
+        android:layout_width="350dp"
+        android:layout_height="308dp"
         android:src="@drawable/logo_kidslearning"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

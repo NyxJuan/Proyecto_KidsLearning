@@ -3,16 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C91F1F"
+    android:background="@drawable/fondo_kidslearning"
     tools:context=".inicio.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/home"
+    <ImageView
+        android:id="@+id/avatarImage"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Fragmento Inicio"
-        android:textSize="50dp" />
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/logo_kidslearning" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="62dp"
+        android:fontFamily="monospace"
+        android:text="Bienvenidos"
+        android:textColor="@color/colorAzul"
+        android:textSize="40dp" />
 
 </RelativeLayout>

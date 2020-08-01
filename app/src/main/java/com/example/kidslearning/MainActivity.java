@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.kidslearning.actividades.ContenedorAnimalesActivity;
 import com.example.kidslearning.actividades.ContenedorInstruccionesActivity;
 import com.example.kidslearning.inicio.HomeFragment;
 import com.example.kidslearning.juegos.InicioFragment;
@@ -82,47 +83,66 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
         return false;
     }
 
+
+
+
+    //MENU JUEGOS
     @Override
     public void iniciarMenu1() {
-        //Toast.makeText(getApplicationContext(), "Iniciar Menu1 desde el activity", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, JuegoContar.class);
+        Intent intent = new Intent(this, JuegoIngles.class);
         startActivity(intent);
-
     }
 
     @Override
     public void iniciarMenu2() {
-        Intent intent = new Intent(this, JuegoIngles.class);
-        startActivity(intent);
-        // Toast.makeText(getApplicationContext(), "Iniciar Menu2 desde el activity", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, JuegoFrutas.class);
+        startActivity(i);
     }
 
     @Override
     public void iniciarMenu3() {
+        Toast.makeText(getApplicationContext(), "Iniciar Juego3 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenu4() {
+        Intent intent = new Intent(this, ContenedorInstruccionesActivity.class);
+        startActivity(intent);
+    }
+
+
+    //MENU LECCIONES
+    @Override
+    public void iniciarMenuLecciones1() {
+        Intent intent = new Intent(this, JuegoContar.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void iniciarMenuLecciones2() {
         Intent intent = new Intent(this, JuegoApples.class);
         startActivity(intent);
     }
 
-
     @Override
-    public void iniciarMenu4() {
-
-        Intent i = new Intent(this, JuegoFrutas.class);
-        startActivity(i);
-
-    }
-
-
-    @Override
-    public void iniciarMenu5() {
-        Toast.makeText(getApplicationContext(), "Iniciar Menu5 desde el activity", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void iniciarMenu6() {
-        Intent intent = new Intent(this, ContenedorInstruccionesActivity.class);
+    public void iniciarMenuLecciones3() {
+        Intent intent = new Intent(this, ContenedorAnimalesActivity.class);
         startActivity(intent);
-        //Toast.makeText(getApplicationContext(), "Iniciar Menu6 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenuLecciones4() {
+        Toast.makeText(getApplicationContext(), "Iniciar Leccion4 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenuLecciones5() {
+        Toast.makeText(getApplicationContext(), "Iniciar Leccion5 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenuLecciones6() {
+        Toast.makeText(getApplicationContext(), "Iniciar Leccion6 desde el activity", Toast.LENGTH_SHORT).show();
     }
 
 

@@ -5,18 +5,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".juegos.InicioFragment"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo_juegos">
 
     <ImageView
         android:id="@+id/avatarImage"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="500dp"
+        android:layout_height="150dp"
         android:src="@drawable/logo_kidslearning" />
 
     <TextView
@@ -30,7 +24,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="4dp"
-        android:text="Alumno"
+        android:text="Juegos"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="25sp"
@@ -69,13 +63,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/start"/>
+                    android:src="@drawable/level1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Menu 1"
+                    android:text="Adivinar Números"
                     android:textAlignment="center"
                     android:textColor="@color/colorCeleste"
                     android:textSize="16sp"
@@ -106,13 +100,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/level1"/>
+                    android:src="@drawable/level2"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Menu 2"
+                    android:text="Memorizar Figuras"
                     android:textAlignment="center"
                     android:textColor="@color/colorAzul"
                     android:textSize="16sp"
@@ -127,44 +121,7 @@
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:foreground="?selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/level2"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Menu 3"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorVerde"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!--Cuarto Boton-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMenu4"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="100dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp"
             app:layout_columnWeight="1"
@@ -186,7 +143,44 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Menu 4"
+                    android:text="Identificar Figuras"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorVerde"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--Cuarto Boton-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMenu4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="100dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
+            android:foreground="?selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/start"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ayuda"
                     android:textAlignment="center"
                     android:textColor="@color/colorMarron"
                     android:textSize="16sp"
@@ -194,79 +188,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!--Quinto Boton-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMenu5"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:foreground="?selectableItemBackground">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/level4"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Menu 5"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorNaranja"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <!--Sexto Boton-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMenu6"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:foreground="?selectableItemBackground">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/level5"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Menu 6"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorFucsia"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>
 

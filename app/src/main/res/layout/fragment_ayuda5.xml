@@ -13,7 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="49dp"
-        android:text="Titulo 5"
+        android:text="Guia 5"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="23sp" />
