@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
@@ -47,5 +49,7 @@ public class VocalAFragment extends Fragment {
     }
     private void evento() {
         aaudio.start();
+        Animation animation = AnimationUtils.loadAnimation(getContext(),R.anim.blink);
+        abtn.startAnimation(animation);
     }
 }
