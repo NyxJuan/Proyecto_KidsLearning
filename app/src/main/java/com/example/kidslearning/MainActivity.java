@@ -14,7 +14,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.kidslearning.actividades.ContenedorAnimalesActivity;
+import com.example.kidslearning.actividades.ContenedorFrutasActivity;
 import com.example.kidslearning.actividades.ContenedorInstruccionesActivity;
+import com.example.kidslearning.actividades.ContenedorVocalesActivity;
 import com.example.kidslearning.inicio.HomeFragment;
 import com.example.kidslearning.juegos.InicioFragment;
 import com.example.kidslearning.interfaces.IComunicaFragments;
@@ -132,18 +134,17 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
 
     @Override
     public void iniciarMenuLecciones4() {
-        Toast.makeText(getApplicationContext(), "Iniciar Leccion4 desde el activity", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ContenedorVocalesActivity.class);
+        startActivity(intent);
     }
 
     @Override
     public void iniciarMenuLecciones5() {
-        Toast.makeText(getApplicationContext(), "Iniciar Leccion5 desde el activity", Toast.LENGTH_SHORT).show();
-    }
+        Intent intent = new Intent(this, ContenedorFrutasActivity.class);
+        startActivity(intent);
+}
 
-    @Override
-    public void iniciarMenuLecciones6() {
-        Toast.makeText(getApplicationContext(), "Iniciar Leccion6 desde el activity", Toast.LENGTH_SHORT).show();
-    }
+
 
 
 }

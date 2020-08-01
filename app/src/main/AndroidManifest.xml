@@ -11,6 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".actividades.ContenedorAnimalesActivity"></activity>
         <activity android:name=".actividades.ContenedorInstruccionesActivity"></activity>
+        <activity android:name=".actividades.ContenedorVocalesActivity"></activity>
+        <activity android:name=".actividades.ContenedorFrutasActivity" />
         <activity android:name=".actividades.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

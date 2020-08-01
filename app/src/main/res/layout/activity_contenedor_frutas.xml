@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividades.ContenedorFrutasActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_frutas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorVerde"
+        android:elevation="12dp"
+        app:tabIndicatorColor="@color/colorVerde"
+        app:tabSelectedTextColor="@color/colorAzul"
+        app:tabTextColor="@color/colorBlanco" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_frutas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+

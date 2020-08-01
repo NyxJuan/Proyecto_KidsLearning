@@ -41,7 +41,7 @@ public class LeccionesFragment extends Fragment {
         cardMenu3 = vista.findViewById(R.id.cardMenu3);
         cardMenu4 = vista.findViewById(R.id.cardMenu4);
         cardMenu5 = vista.findViewById(R.id.cardMenu5);
-        cardMenu6 = vista.findViewById(R.id.cardMenu6);
+        //cardMenu6 = vista.findViewById(R.id.cardMenu6);
         eventosMenu();
         return vista;
     }
@@ -83,12 +83,12 @@ public class LeccionesFragment extends Fragment {
             }
         });
 
-        cardMenu6.setOnClickListener(new View.OnClickListener() {
+        /*cardMenu6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 interfaceComunicarFragments.iniciarMenuLecciones6();
             }
-        });
+        });*/
     }
 
     @Override

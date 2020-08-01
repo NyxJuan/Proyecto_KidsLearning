@@ -180,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Las Figuras"
+                    android:text="Las Vocales"
                     android:textAlignment="center"
                     android:textColor="@color/colorMarron"
                     android:textSize="16sp"
@@ -225,42 +225,7 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!--Sexto Boton-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardMenu6"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="10dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="6dp"
-            app:layout_columnWeight="1"
-            app:layout_rowWeight="1"
-            android:foreground="?selectableItemBackground">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:orientation="vertical">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:src="@drawable/level5"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Las emociones"
-                    android:textAlignment="center"
-                    android:textColor="@color/colorFucsia"
-                    android:textSize="16sp"
-                    android:textStyle="bold"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
     </androidx.gridlayout.widget.GridLayout>
 
