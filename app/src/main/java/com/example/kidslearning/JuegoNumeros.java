@@ -1,6 +1,7 @@
 package com.example.kidslearning;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -35,6 +36,8 @@ public class JuegoNumeros  extends AppCompatActivity {
     int numeroPrimero, numeroSegundo;
     boolean bloqueo = false;
     final Handler handler = new Handler();
+
+    private MediaPlayer mpWin;
     String currentActivity;
 
     @Override
@@ -164,6 +167,8 @@ public class JuegoNumeros  extends AppCompatActivity {
 
                 //   textoPuntuacion.setText("INTENTOS: " + puntuacion);
                 if(aciertos == imagenes.length){
+                    mpWin = MediaPlayer.create(this,R.raw.winner);
+                    mpWin.start();
                     startActivity(new Intent(JuegoNumeros.this, PopUp.class).putExtra("from" , currentActivity));
                     Toast toast = Toast.makeText(getApplicationContext(), "Has ganado!!", Toast.LENGTH_LONG);
                     toast.show();

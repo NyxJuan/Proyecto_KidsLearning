@@ -7,13 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".JuegoContar"
     android:weightSum="4"
-    android:background="@drawable/number_counting_bg"
+    android:background="@drawable/numbers"
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_marginTop="60dp"
         android:layout_weight="1"
         android:padding="12dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:weightSum="4"
@@ -24,7 +25,7 @@
             android:layout_weight="1.2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/number_counting_title"
+            android:src="@drawable/contar"
             android:scaleType="fitCenter"/>
 
 

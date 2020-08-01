@@ -1,5 +1,6 @@
 package com.example.kidslearning.lecciones;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,11 +8,16 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.example.kidslearning.R;
 
 
 public class Animal5Fragment extends Fragment {
+
+    private ImageButton gatobtn;
+    private MediaPlayer gatoaudio;
+    View vista;
 
 
     @Override
@@ -24,6 +30,22 @@ public class Animal5Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_animal5, container, false);
+        vista = inflater.inflate(R.layout.fragment_animal5, container, false);
+        gatobtn = vista.findViewById(R.id.imageButtonAnimal5);
+        //create mediaPlayer for all sounds
+        gatoaudio = MediaPlayer.create(getContext(),R.raw.gato);
+
+
+        gatobtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                evento();
+            }
+        });
+
+
+        return vista;
+    }
+    private void evento() {
+        gatoaudio.start();
     }
 }

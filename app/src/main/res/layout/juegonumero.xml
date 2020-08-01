@@ -166,8 +166,8 @@
 
             <Button
                 android:id="@+id/botonJuegoReiniciar"
-                android:background="#000000"
-                android:textColor="@color/colorAccent"
+                android:background="#0066FF"
+                android:textColor="#00CC33"
                 android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -177,9 +177,10 @@
             <Button
                 android:id="@+id/next"
                 android:layout_width="wrap_content"
-                android:background="#000000"
+                android:background="#0066FF"
+                android:textColor="#00CC33"
                 android:layout_marginLeft="34dp"
-                android:textColor="@color/colorAccent"
+
                 android:textSize="20dp"
                 android:layout_height="wrap_content"
                 android:text="@string/next">
@@ -190,12 +191,13 @@
             <Button
                 android:id="@+id/botonJuegoSalir"
                 android:layout_width="wrap_content"
-                android:background="#000000"
-                android:layout_marginLeft="34dp"
-                android:textColor="@color/colorAccent"
-                android:textSize="20dp"
                 android:layout_height="wrap_content"
-                android:text="@string/boton_juego_quit">
+                android:layout_marginLeft="34dp"
+                android:background="#0066FF"
+
+                android:text="@string/boton_juego_quit"
+                android:textColor="#00CC33"
+                android:textSize="20dp">
 
             </Button>
 
