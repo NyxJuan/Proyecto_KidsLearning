@@ -17,8 +17,8 @@
             android:icon="@drawable/play"
             android:title="Juegos" />
 
-        <item android:id="@+id/salir"
+        <item android:id="@+id/cuentos"
             android:icon="@drawable/exit"
-            android:title="Salir" />
+            android:title="Cuentos" />
     </group>
 </menu>

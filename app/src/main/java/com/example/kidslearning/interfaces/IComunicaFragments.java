@@ -15,4 +15,11 @@ public interface IComunicaFragments {
     public void iniciarMenuLecciones4();
     public void iniciarMenuLecciones5();
 
+
+    //MENU CUENTOS
+    public void iniciarMenuCuentos1();
+    public void iniciarMenuCuentos2();
+    public void iniciarMenuCuentos3();
+    public void iniciarMenuCuentos4();
+
 }

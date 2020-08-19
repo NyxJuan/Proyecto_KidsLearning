@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,6 +19,7 @@ import com.example.kidslearning.actividades.ContenedorVocalesActivity;
 import com.example.kidslearning.inicio.HomeFragment;
 import com.example.kidslearning.juegos.InicioFragment;
 import com.example.kidslearning.interfaces.IComunicaFragments;
+import com.example.kidslearning.cuentos.CuentosFragment;
 import com.example.kidslearning.lecciones.LeccionesFragment;
 import com.google.android.material.navigation.NavigationView;
 
@@ -79,6 +79,9 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
                 break;
             case R.id.juegos:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new InicioFragment()).commit();
+                break;
+            case R.id.cuentos:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CuentosFragment()).commit();
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
@@ -144,7 +147,26 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
         startActivity(intent);
 }
 
+    //MENU CUENTOS
+    @Override
+    public void iniciarMenuCuentos1() {
+        Toast.makeText(getApplicationContext(), "Iniciar Cuento1 desde el activity", Toast.LENGTH_SHORT).show();
+    }
 
+    @Override
+    public void iniciarMenuCuentos2() {
+        Toast.makeText(getApplicationContext(), "Iniciar Cuento2 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenuCuentos3() {
+        Toast.makeText(getApplicationContext(), "Iniciar Cuento3 desde el activity", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void iniciarMenuCuentos4() {
+        Toast.makeText(getApplicationContext(), "Iniciar Cuento4 desde el activity", Toast.LENGTH_SHORT).show();
+    }
 
 
 }
