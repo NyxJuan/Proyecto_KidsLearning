@@ -47,6 +47,22 @@ public class Animal3Fragment extends Fragment {
 
         return vista;
     }
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        // Make sure that we are currently visible
+        if (this.isVisible()) {
+            // If we are becoming invisible, then...
+            if (!isVisibleToUser) {
+                ovejaaudio.stop();
+            }
+            else {
+                // do what you like
+            }
+        }
+    }
+
+
     private void evento() {
         ovejaaudio.start();
         Animation animation = AnimationUtils.loadAnimation(getContext(),R.anim.blink);
