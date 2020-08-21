@@ -17,14 +17,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario"
+        android:text="KidsLearning"
         android:textColor="#fff"
         android:paddingTop="8dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="micorreo@gmail.com"
+        android:text="Bienvenido"
         android:textColor="#fff"
         android:paddingTop="8dp"/>
 </LinearLayout>

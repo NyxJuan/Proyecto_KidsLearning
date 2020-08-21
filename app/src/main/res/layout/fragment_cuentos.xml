@@ -101,10 +101,11 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/start" />
+                    android:src="@drawable/cuento2"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -140,10 +141,11 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/start" />
+                    android:src="@drawable/cuento3"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -179,16 +181,17 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/start" />
+                    android:src="@drawable/cuento4"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Risitos de oro"
+                    android:text="Hombre de jengibre"
                     android:layout_marginTop="10dp"
                     android:textAlignment="center"
                     android:textColor="@color/colorMarron"
