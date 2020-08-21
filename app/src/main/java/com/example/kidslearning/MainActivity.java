@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.kidslearning.actividades.ContenedorAnimalesActivity;
+import com.example.kidslearning.actividades.ContenedorCuentos1Activity;
 import com.example.kidslearning.actividades.ContenedorFrutasActivity;
 import com.example.kidslearning.actividades.ContenedorInstruccionesActivity;
 import com.example.kidslearning.actividades.ContenedorVocalesActivity;
@@ -150,7 +151,8 @@ public class MainActivity extends AppCompatActivity implements IComunicaFragment
     //MENU CUENTOS
     @Override
     public void iniciarMenuCuentos1() {
-        Toast.makeText(getApplicationContext(), "Iniciar Cuento1 desde el activity", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, ContenedorCuentos1Activity.class);
+        startActivity(intent);
     }
 
     @Override

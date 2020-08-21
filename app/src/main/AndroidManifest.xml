@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".actividades.ContenedorAnimalesActivity"></activity>
-        <activity android:name=".actividades.ContenedorInstruccionesActivity"></activity>
-        <activity android:name=".actividades.ContenedorVocalesActivity"></activity>
+        <activity android:name=".actividades.ContenedorCuentos1Activity"></activity>
+        <activity android:name=".actividades.ContenedorAnimalesActivity" />
+        <activity android:name=".actividades.ContenedorInstruccionesActivity" />
+        <activity android:name=".actividades.ContenedorVocalesActivity" />
         <activity android:name=".actividades.ContenedorFrutasActivity" />
         <activity android:name=".actividades.SplashActivity">
             <intent-filter>
@@ -20,9 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".JuegoFrutas" />
         <activity android:name=".JuegoNumeros" />
         <activity android:name=".JuegoContar" />
@@ -31,7 +30,7 @@
         <activity android:name=".JuegoApples" />
         <activity
             android:name=".PopUp"
-            android:theme="@style/AppTheme.CustomTheme"></activity>
+            android:theme="@style/AppTheme.CustomTheme" />
     </application>
 
 </manifest>

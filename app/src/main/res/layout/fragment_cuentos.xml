@@ -61,10 +61,11 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/start" />
+                    android:src="@drawable/cuento1"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -125,7 +126,7 @@
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="10dp"
             android:foreground="?selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp"
@@ -164,7 +165,7 @@
             android:layout_height="0dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="10dp"
             android:foreground="?selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp"

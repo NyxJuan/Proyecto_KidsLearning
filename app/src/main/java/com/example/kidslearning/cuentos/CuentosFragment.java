@@ -76,19 +76,7 @@ public class CuentosFragment extends Fragment {
             }
         });
 
-        /*cardMenu5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                interfaceComunicarFragments.iniciarMenuLecciones5();
-            }
-        });
 
-        cardMenu6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                interfaceComunicarFragments.iniciarMenuLecciones6();
-            }
-        });*/
     }
 
     @Override
